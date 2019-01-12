@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "TrState",
+  "title": "Tr schema state",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "name",
+      "type": "string",
+      "description": "Название state состояния",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "project": {
+      "title": "project",
+      "type": "string",
+      "description": "Название проекта"
+    },
+    "shared": {
+      "title": "share",
+      "type": "boolean",
+      "description": "Разместить код в shared проекте"
+    },
+    "service": {
+      "title": "service",
+      "type": "boolean",
+      "description": "Создать service и effects"
+    }
+  },
+  "required": [
+    "project"
+  ]
+}

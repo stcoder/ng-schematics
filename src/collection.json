@@ -1,0 +1,30 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "component": {
+      "description": "Создание компонента.",
+      "factory": "./component/index#component",
+      "schema": "./component/schema.json"
+    },
+    "sdk": {
+      "description": "Создание sdk компонента",
+      "factory": "./sdk/index#sdk",
+      "schema": "./sdk/schema.json"
+    },
+    "container": {
+      "description": "Создание контейнера sdk компонентов",
+      "factory": "./container/index#container",
+      "schema": "./container/schema.json"
+    },
+    "state": {
+      "description": "Генерация управления состоянием",
+      "factory": "./state/index#state",
+      "schema": "./state/schema.json"
+    },
+    "page": {
+      "description": "Генерация страницы",
+      "factory": "./page/index#page",
+      "schema": "./page/schema.json"
+    }
+  }
+}

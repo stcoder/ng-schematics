@@ -1,0 +1,27 @@
+{
+  "name": "tr",
+  "version": "0.0.0",
+  "description": "A blank schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^0.7.2",
+    "@angular-devkit/schematics": "^0.7.2",
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.0.31",
+    "@types/pluralize": "0.0.29",
+    "jasmine": "^2.8.0",
+    "pluralize": "^7.0.0",
+    "typescript": "^2.5.2"
+  },
+  "devDependencies": {
+    "schematics-utilities": "^1.1.0"
+  }
+}

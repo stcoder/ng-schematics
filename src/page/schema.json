@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "TrPage",
+  "title": "Tr schema page",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "name",
+      "type": "string",
+      "description": "Название страницы",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "project": {
+      "title": "project",
+      "type": "string",
+      "description": "Название проекта"
+    }
+  },
+  "required": [
+    "project"
+  ]
+}

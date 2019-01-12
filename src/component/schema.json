@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "TrComponent",
+  "title": "Tr schema component",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "name",
+      "type": "string",
+      "description": "Название компонента",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "platforms": {
+      "title": "platforms",
+      "type": "string",
+      "description": "Компонент для платформ (web, ionic)"
+    },
+    "project": {
+      "title": "project",
+      "type": "string",
+      "description": "Название проекта"
+    },
+    "base": {
+      "title": "base",
+      "type": "boolean",
+      "description": "Компонент как базовый (не имеет разделене на платформы)"
+    },
+    "flat": {
+      "title": "flat",
+      "type": "boolean",
+      "description": "Флаг указывающий, создавать ли каталог"
+    }
+  },
+  "required": [
+    "project"
+  ]
+}

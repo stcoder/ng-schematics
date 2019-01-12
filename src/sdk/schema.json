@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "TrSdk",
+  "title": "Tr schema sdk",
+  "type": "object",
+  "properties": {
+    "name": {
+      "title": "name",
+      "type": "string",
+      "description": "Название sdk компонента",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "platforms": {
+      "title": "platforms",
+      "type": "string",
+      "description": "Sdk компонент для платформ (web, ionic)"
+    },
+    "base": {
+      "title": "base",
+      "type": "boolean",
+      "description": "Sdk Компонент как базовый (не имеет разделене на платформы)"
+    },
+    "component:base": {
+      "title": "component:base",
+      "type": "boolean",
+      "description": "sdk компонент как базовый, без подключения к sdk модулю"
+    }
+  },
+  "required": []
+}
